@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casse Brick</title>
+    <style>
+    *{ 
+        padding: 0; 
+        margin: 0; 
+        }
+        
+    canvas { 
+        background: white; 
+        display: block;
+        margin: 0 auto; 
+    }
+        </style>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var x = canvas.width/2;
+    var y = canvas.height-30;
+    var ballRadius = 10;
+    var dx = 2;
+    var dy = -2;
+    var paddleHeight = 10;
+    var paddleWidth = 75;
+    var paddleX = (canvas.width-paddleWidth)/2;
+    var rightPressed = false;
+    var leftPressed = false;
+    var brickRowCount = 3;
+    var brickColumnCount = 5;
+    var brickWidth = 75;
+    var brickHeight = 20;
+    var brickPadding = 10;
+    var brickOffsetop = 30;
+    var brickOffsetLeft =30;
+    var score = 0;
+    var lives = 3;
+    var bricks = [];
+    for (c=0;c<birckColumnCount; c++){
+
+    }
+    
+    function drawBricks(){
+        for(c=0; c<brick
+    }
+
+
+    </script>
+
+    
+    
+</body>
+</html>

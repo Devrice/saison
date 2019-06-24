@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style3.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="input" type="date">
+
+    <script>
+
+            const input = document.getElementById("input");
+            console.log(input);
+            
+            input.addEventListener ("change", () => {
+                var valinput = input.value;
+                console.log(valinput);
+            
+                var date = new Date(valinput);
+                var mois = date.getMonth()+1;
+                var jour = date.getDate();
+                console.log(mois);
+                console.log(jour);
+                
+            
+    
+                if( (mois == 3 && jour >= 21) || (mois == 4 && jour <= 19) ){
+                    console.log('Belier');
+                }
+                else if(mois ==4 && jour >= 20 ) || (mois == 5 && jour <= 20){
+                    console.log('Taureau');
+                }
+                {
+
+                }
+                else{
+                    console.log('a completer');
+                }
+            })
+            
+    </script>
+
+</body>
+</html>
